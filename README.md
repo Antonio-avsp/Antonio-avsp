@@ -29,7 +29,7 @@ Tenho mentalidade prática, aprendo rápido e estou sempre em busca de novos des
 </div>
 
 ```diff
-+ Construindo APIs com Node.js e Express
++ Construindo APIs
 + Desenvolvendo aplicações web e mobile de ponta a ponta
 + Aplicando IA (LLMs) em produtos digitais
 + Aberto a oportunidades e colaborações
