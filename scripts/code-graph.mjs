@@ -1,7 +1,7 @@
 // Gera o "compilador de contribuições": o quadro de contribuições em 0 e 1,
 // com uma linha de compilação passando por ele.
 // Uso no GitHub Actions: node scripts/code-graph.mjs  (precisa de GITHUB_TOKEN e GH_USER)
-import { mkdirSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 
 const THEMES = {
   dark: {
@@ -169,7 +169,7 @@ export function repoCard(r, t) {
 <text x="20" y="66" style="font-size:15px;font-weight:700"><tspan fill="${t.muted}">./</tspan><tspan fill="${t.accent}">${esc2(r.name)}</tspan></text>
 ${desc.map((d, i) => `<text x="20" y="${92 + i * 18}" style="font-size:12px;fill:${r.description ? t.text : t.muted}">${esc2(d)}</text>`).join("")}
 ${lang ? `<circle cx="25" cy="${H - 20}" r="5" fill="${lang.color || t.muted}"/><text x="36" y="${H - 16}" style="font-size:12px;fill:${t.muted}">${esc2(lang.name)}</text>` : ""}
-<text x="${W - 20}" y="${H - 16}" text-anchor="end" style="font-size:12px;fill:${t.muted}">★ ${r.stargazerCount}   ⑂ ${r.forkCount}</text>
+<text x="${W - 20}" y="${H - 16}" text-anchor="end" style="font-size:12px;fill:${t.muted}">${r.rodape ? esc2(r.rodape) : `★ ${r.stargazerCount}   ⑂ ${r.forkCount}`}</text>
 </svg>`;
 }
 
@@ -207,7 +207,19 @@ async function main() {
     repos: u.repositories.totalCount, stars: repos.reduce((a, b) => a + b.stargazerCount, 0),
     followers: u.followers.totalCount,
   };
-  const chosen = wanted.length ? wanted.map((n) => repos.find((x) => x.name === n)).filter(Boolean) : repos.slice(0, 4);
+  // Projetos em destaque: scripts/projetos.json (na ordem). Cada item é
+  //   { "repo": "nome" }  -> repositório público seu, com dados vindos da API
+  //   { "nome", "descricao", "linguagem": {name,color}, "rodape" } -> card fixo (ex.: repositório privado ou de organização)
+  const arq = new URL("./projetos.json", import.meta.url);
+  const lista = existsSync(arq) ? JSON.parse(readFileSync(arq, "utf8")) : wanted.map((repo) => ({ repo }));
+  const chosen = lista.length
+    ? lista.map((p) => {
+        if (!p.repo) return { name: p.nome, description: p.descricao, primaryLanguage: p.linguagem, rodape: p.rodape };
+        const rp = repos.find((x) => x.name === p.repo);
+        if (!rp) { console.warn(`Repositório não encontrado (precisa ser público): ${p.repo}`); return null; }
+        return { ...rp, description: rp.description || p.descricao || null, rodape: p.rodape };
+      }).filter(Boolean)
+    : repos.slice(0, 4);
 
   mkdirSync("dist", { recursive: true });
   for (const [suf, t] of [["", THEMES.light], ["-dark", THEMES.dark]]) {

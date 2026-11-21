@@ -1,0 +1,18 @@
+[
+  {
+    "nome": "AGIR",
+    "descricao": "Ambiente geoespacial com PostGIS e QGIS que checa a regularidade ambiental de imóveis rurais",
+    "linguagem": { "name": "Python", "color": "#3572A5" },
+    "rodape": "Residência BB · 2026.2"
+  },
+  {
+    "nome": "agente-financeiro",
+    "descricao": "API de Open Finance com FastAPI e Gemini: análise financeira, indicadores e metas com IA",
+    "linguagem": { "name": "Python", "color": "#3572A5" },
+    "rodape": "Residência BB · 2026.1"
+  },
+  {
+    "repo": "Telas-Liferay-2.0",
+    "descricao": "Plataforma web que conecta voluntários a ações sociais, com painel de impacto em tempo real"
+  }
+]

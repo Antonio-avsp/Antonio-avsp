@@ -26,7 +26,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_USER: ${{ github.repository_owner }}
-          REPOS: bioalert,barbearia-digital,vendas-online-backend,Projeto_Antimicrobiano_Inteligente
 
       - name: Publicar no branch output
         uses: crazy-max/ghaction-github-pages@v4
