@@ -26,25 +26,28 @@ const STACK = [
   ["soft_skills", ["Comunicação", "Trabalho em equipe", "Oratória", "Pensamento analítico"]],
 ];
 
-// tipo: residencia | evento | premio | projeto | init  (mais recente primeiro)
+// Colunas da trajetória, como no currículo: [título, subtítulo, período]  (mais recente primeiro)
+// Em "certificados", o 4º campo opcional "premio" pinta o marcador de dourado.
 const TRAJETORIA = [
-  ["residencia", "2026.2", "Residência Tecnológica", "Banco do Brasil"],
-  ["evento", "2026.2", "REC'n'Play", "Capítulo IA"],
-  ["residencia", "2026.1", "Residência Tecnológica", "Banco do Brasil"],
-  ["projeto", "2026.1", "GENAT · Gerenciamento de Atividades Complementares", "Faculdade Senac"],
-  ["premio", "2026.1", "Aluno destaque", "Porto Digital"],
-  ["evento", "2026.1", "Hackathon Porto de Suape", ""],
-  ["evento", "2026.1", "Hackathon Manus Day 2026", "Recife"],
-  ["residencia", "2025.2", "Residência Tecnológica", "Liferay DXP"],
-  ["premio", "2025.2", "Aluno destaque", "Porto Digital"],
-  ["evento", "2025.2", "REC'n'Play", ""],
-  ["init", "origem", "Atendimento ao cliente @ Ferreira Costa", "→ foco no usuário"],
-];
-
-const CERTIFICADOS = [
-  ["rocketseat/", "formacao-nodejs-rotas-http-e-apis"],
-  ["rocketseat/", "projeto-com-tooling-fundamentos"],
-  ["eldorado/", "psicologia-aplicada-a-ux"],
+  ["experiencia", [
+    ["Banco do Brasil", "Residência Tecnológica", "2026.2"],
+    ["Banco do Brasil", "Residência Tecnológica", "2026.1"],
+    ["GENAT · Faculdade Senac", "Gerenc. de Ativ. Complementares", "2026.1"],
+    ["Liferay DXP", "Residência Tecnológica", "2025.2"],
+  ]],
+  ["eventos", [
+    ["REC'n'Play", "Capítulo IA", "2026.2"],
+    ["Porto de Suape", "Hackathon", "2026.1"],
+    ["Manus Day 2026", "Hackathon · Recife", "2026.1"],
+    ["REC'n'Play", "Recife", "2025.2"],
+  ]],
+  ["certificados", [
+    ["Aluno destaque", "Porto Digital", "2026.1", "premio"],
+    ["Aluno destaque", "Porto Digital", "2025.2", "premio"],
+    ["Node.js, rotas HTTP e APIs", "Rocketseat", ""],
+    ["Projeto com tooling", "Rocketseat · fundamentos", ""],
+    ["Psicologia Aplicada a UX", "Instituto Eldorado", ""],
+  ]],
 ];
 
 const SECOES = ["sobre_mim", "tecnologias", "trajetoria", "projetos", "estatisticas", "contribuicoes"];
@@ -161,12 +164,12 @@ function editor() {
   const lista = (arr) => p("[") + arr.map((x) => s(x)).join(p(", ")) + p("]");
   const linhas = [
     span(C.red, "const ") + span(C.blue, "antonio") + p(" = {"),
-    p("  ") + k("cargo") + p(": ") + s("Dev Web | Backend & Frontend") + p(","),
+    p("  ") + k("cargo") + p(": ") + s("Dev Full Stack") + p(","),
     p("  ") + k("formacao") + p(": ") + s("ADS @ Faculdade Senac") + p(","),
     p("  ") + k("ecossistema") + p(": ") + s("Porto Digital") + p(","),
     p("  ") + k("residencias") + p(": ") + lista(["Banco do Brasil", "Liferay DXP"]) + p(","),
-    p("  ") + k("projetos") + p(": ") + lista(["BioAlert", "Barbearia Digital"]) + p(","),
-    p("  ") + k("diferencial") + p(": ") + s("comunicação + foco no usuário") + p(","),
+    p("  ") + k("foco") + p(": ") + lista(["APIs", "Web", "Mobile", "IA"]) + p(","),
+    p("  ") + k("diferenciais") + p(": ") + lista(["Comunicação", "Oratória"]) + p(","),
     p("  ") + k("disponivel") + p(": ") + span(C.cyan, "true") + p(","),
     p("};"),
     "",
@@ -217,57 +220,36 @@ ${janela(W, H, "stack.yml — competencias", 14, 46)}
 ${corpo}</svg>\n`;
 }
 
-// ------------------------- trajetória (git log) -------------------------
+// ------------------------- trajetória (colunas) -------------------------
 function trajetoria() {
-  const COR = { residencia: C.blue, evento: C.purple, premio: C.gold, projeto: C.green, init: C.muted };
-  const TAG = { residencia: "residência", evento: "evento", premio: "prêmio", projeto: "projeto", init: "init" };
-  const CW = 8.4, W = 1000, y0 = 130, step = 30;
-  const yUlt = y0 + (TRAJETORIA.length - 1) * step;
-  const yCert = yUlt + 50, H = yCert + CERTIFICADOS.length * 26 + 30;
-  let seed = 0x5eed;
-  const hash = () => Array.from({ length: 7 }, () => {
-    seed = (Math.imul(seed, 1103515245) + 12345) >>> 0;
-    return ((seed >>> 16) & 15).toString(16);
-  }).join("");
-
-  let corpo = `<text x="30" y="86" class="l" xml:space="preserve" style="font-size:15px">${span(C.green, "$")}${span(C.text, " git log ")}${span(C.orange, "--graph --oneline ")}${span(C.purple, "carreira")}</text>\n`;
-  // legenda
-  let lx = 970;
-  const leg = ["projeto", "premio", "evento", "residencia"];
-  let legenda = "";
-  for (const tipo of leg) {
-    const label = TAG[tipo], w = label.length * 7.8;
-    legenda = `<circle cx="${r1(lx - w - 10)}" cy="81" r="4.5" fill="${COR[tipo]}"/><text x="${r1(lx - w)}" y="86" fill="${C.muted}" style="font-size:13px">${esc(label)}</text>` + legenda;
-    lx -= w + 34;
-  }
-  corpo += `<g class="l">${legenda}</g>\n`;
-  corpo += `<rect x="43" y="${y0 - 5}" width="2" height="${yUlt - y0}" fill="${C.border}" class="l"/>\n`;
-
-  TRAJETORIA.forEach(([tipo, data, msg, sub], i) => {
-    const y = y0 + i * step, d = (0.2 + i * 0.12).toFixed(2), cor = COR[tipo];
-    let linha = span(C.orange, hash(), ` x="66"`) + span(C.muted, data, ` x="142"`);
-    linha += `<tspan x="210" fill="${C.muted}">(</tspan>${span(cor, TAG[tipo])}${span(C.muted, ")")}`;
-    linha += `<tspan x="326" fill="${tipo === "init" ? C.muted : C.text}">${esc(msg)}</tspan>`;
-    if (sub) linha += tipo === "init" ? span(C.muted, " " + sub) : span(C.muted, " — ") + span(C.white, sub, ` font-weight="700"`);
-    let head = "";
-    if (i === 0) {
-      const len = msg.length + (sub ? sub.length + 3 : 0);
-      head = `<text x="${r1(326 + len * CW + 14)}" y="${y}">${span(C.muted, "(")}${span(C.cyan, "HEAD -> ")}${span(C.green, "main", ` font-weight="700"`)}${span(C.muted, ")")}</text>`;
-    }
-    corpo += `<g class="l" style="animation-delay:${d}s"><circle cx="44" cy="${y - 5}" r="6" fill="${cor}" stroke="${C.bg}" stroke-width="2"/><text y="${y}" xml:space="preserve">${linha}</text>${head}</g>\n`;
+  const COR = { experiencia: C.blue, eventos: C.purple, certificados: C.orange };
+  const W = 1000, colW = 300, gap = 20, x0 = 30, yPainel = 108, yItem = 186, step = 54;
+  const maxItens = Math.max(...TRAJETORIA.map(([, itens]) => itens.length));
+  const yFim = yItem + (maxItens - 1) * step + 36, H = yFim + 22;
+  let corpo = `<text x="30" y="84" class="l" xml:space="preserve" style="font-size:15px">${span(C.green, "$")}${span(C.text, " ls ")}${span(C.orange, "-1 ")}${span(C.str, "carreira/*")}</text>\n`;
+  let atraso = 0.2;
+  TRAJETORIA.forEach(([pasta, itens], ci) => {
+    const x = x0 + ci * (colW + gap), cor = COR[pasta] || C.green;
+    corpo += `<g class="l" style="animation-delay:${atraso.toFixed(2)}s">
+<rect x="${x}" y="${yPainel}" width="${colW}" height="${yFim - yPainel}" rx="10" fill="${C.panel}" stroke="${C.border}"/>
+<text x="${x + 16}" y="${yPainel + 30}" style="font-size:15px;font-weight:700" fill="${cor}">${esc(pasta)}/</text>
+<text x="${x + colW - 16}" y="${yPainel + 30}" text-anchor="end" fill="${C.muted}" style="font-size:12px">${itens.length} itens</text>
+<rect x="${x + 1}" y="${yPainel + 46}" width="${colW - 2}" height="1" fill="${C.border}"/>
+<rect x="${x + 17}" y="${yItem - 5}" width="2" height="${(itens.length - 1) * step}" fill="${C.border}"/></g>\n`;
+    itens.forEach(([titulo, sub, data, tipo], i) => {
+      atraso += 0.1;
+      const y = yItem + i * step, dot = tipo === "premio" ? C.gold : cor;
+      corpo += `<g class="l" style="animation-delay:${atraso.toFixed(2)}s"><circle cx="${x + 18}" cy="${y - 5}" r="6" fill="${dot}" stroke="${C.panel}" stroke-width="2"/>
+<text x="${x + 34}" y="${y}" fill="${C.white}" style="font-weight:700">${esc(titulo)}</text>
+${data ? `<text x="${x + colW - 16}" y="${y}" text-anchor="end" fill="${C.muted}" style="font-size:12px">${esc(data)}</text>` : ""}
+<text x="${x + 34}" y="${y + 20}" fill="${C.muted}" style="font-size:12px">${esc(sub)}</text></g>\n`;
+    });
+    atraso += 0.15;
   });
-
-  const dc = (0.3 + TRAJETORIA.length * 0.12).toFixed(2);
-  corpo += `<text x="30" y="${yCert}" class="l" style="animation-delay:${dc}s;font-size:15px" xml:space="preserve">${span(C.green, "$")}${span(C.text, " ls ")}${span(C.orange, "-1 ")}${span(C.str, "certificados/")}</text>\n`;
-  CERTIFICADOS.forEach(([dir, arq], i) => {
-    const d = (Number(dc) + 0.15 + i * 0.12).toFixed(2);
-    corpo += `<text x="30" y="${yCert + 28 + i * 26}" class="l" style="animation-delay:${d}s" xml:space="preserve">${span(C.blue, dir.padEnd(13), ` font-weight="700"`)}${span(C.text, arq)}</text>\n`;
-  });
-
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">
 <style>text{font-family:${FONT};font-size:14px;white-space:pre}
 .l{opacity:0;animation:l .4s ease-out forwards}@keyframes l{to{opacity:1}}</style>
-${janela(W, H, "trajetoria.log — git log", 14, 46)}
+${janela(W, H, "trajetoria — carreira/", 14, 46)}
 ${corpo}</svg>\n`;
 }
 

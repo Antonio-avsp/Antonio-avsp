@@ -1,27 +1,80 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="588" viewBox="0 0 1000 588">
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="460" viewBox="0 0 1000 460">
 <style>text{font-family:'JetBrains Mono','Fira Code',Consolas,'Courier New',monospace;font-size:14px;white-space:pre}
 .l{opacity:0;animation:l .4s ease-out forwards}@keyframes l{to{opacity:1}}</style>
-<rect x="1" y="1" width="998" height="586" rx="14" fill="#0d1117" stroke="#30363d" stroke-width="2"/>
+<rect x="1" y="1" width="998" height="458" rx="14" fill="#0d1117" stroke="#30363d" stroke-width="2"/>
 <path d="M1 15 a14 14 0 0 1 14 -14 H985 a14 14 0 0 1 14 14 V46 H1Z" fill="#161b22"/>
 <rect x="1" y="46" width="998" height="1" fill="#30363d"/>
 <circle cx="28" cy="24" r="7" fill="#ff5f57"/><circle cx="50" cy="24" r="7" fill="#febc2e"/><circle cx="72" cy="24" r="7" fill="#28c840"/>
-<text x="500" y="29" text-anchor="middle" fill="#8b949e" font-size="14">trajetoria.log — git log</text>
-<text x="30" y="86" class="l" xml:space="preserve" style="font-size:15px"><tspan fill="#39d353">$</tspan><tspan fill="#c9d1d9"> git log </tspan><tspan fill="#ffa657">--graph --oneline </tspan><tspan fill="#d2a8ff">carreira</tspan></text>
-<g class="l"><circle cx="631.8" cy="81" r="4.5" fill="#58a6ff"/><text x="641.8" y="86" fill="#8b949e" style="font-size:13px">residência</text><circle cx="743.8" cy="81" r="4.5" fill="#d2a8ff"/><text x="753.8" y="86" fill="#8b949e" style="font-size:13px">evento</text><circle cx="824.6" cy="81" r="4.5" fill="#e3b341"/><text x="834.6" y="86" fill="#8b949e" style="font-size:13px">prêmio</text><circle cx="905.4" cy="81" r="4.5" fill="#39d353"/><text x="915.4" y="86" fill="#8b949e" style="font-size:13px">projeto</text></g>
-<rect x="43" y="125" width="2" height="300" fill="#30363d" class="l"/>
-<g class="l" style="animation-delay:0.20s"><circle cx="44" cy="125" r="6" fill="#58a6ff" stroke="#0d1117" stroke-width="2"/><text y="130" xml:space="preserve"><tspan fill="#ffa657" x="66">2760097</tspan><tspan fill="#8b949e" x="142">2026.2</tspan><tspan x="210" fill="#8b949e">(</tspan><tspan fill="#58a6ff">residência</tspan><tspan fill="#8b949e">)</tspan><tspan x="326" fill="#c9d1d9">Residência Tecnológica</tspan><tspan fill="#8b949e"> — </tspan><tspan fill="#ffffff" font-weight="700">Banco do Brasil</tspan></text><text x="676" y="130"><tspan fill="#8b949e">(</tspan><tspan fill="#79c0ff">HEAD -&gt; </tspan><tspan fill="#39d353" font-weight="700">main</tspan><tspan fill="#8b949e">)</tspan></text></g>
-<g class="l" style="animation-delay:0.32s"><circle cx="44" cy="155" r="6" fill="#d2a8ff" stroke="#0d1117" stroke-width="2"/><text y="160" xml:space="preserve"><tspan fill="#ffa657" x="66">314e23b</tspan><tspan fill="#8b949e" x="142">2026.2</tspan><tspan x="210" fill="#8b949e">(</tspan><tspan fill="#d2a8ff">evento</tspan><tspan fill="#8b949e">)</tspan><tspan x="326" fill="#c9d1d9">REC'n'Play</tspan><tspan fill="#8b949e"> — </tspan><tspan fill="#ffffff" font-weight="700">Capítulo IA</tspan></text></g>
-<g class="l" style="animation-delay:0.44s"><circle cx="44" cy="185" r="6" fill="#58a6ff" stroke="#0d1117" stroke-width="2"/><text y="190" xml:space="preserve"><tspan fill="#ffa657" x="66">7355855</tspan><tspan fill="#8b949e" x="142">2026.1</tspan><tspan x="210" fill="#8b949e">(</tspan><tspan fill="#58a6ff">residência</tspan><tspan fill="#8b949e">)</tspan><tspan x="326" fill="#c9d1d9">Residência Tecnológica</tspan><tspan fill="#8b949e"> — </tspan><tspan fill="#ffffff" font-weight="700">Banco do Brasil</tspan></text></g>
-<g class="l" style="animation-delay:0.56s"><circle cx="44" cy="215" r="6" fill="#39d353" stroke="#0d1117" stroke-width="2"/><text y="220" xml:space="preserve"><tspan fill="#ffa657" x="66">86a70a2</tspan><tspan fill="#8b949e" x="142">2026.1</tspan><tspan x="210" fill="#8b949e">(</tspan><tspan fill="#39d353">projeto</tspan><tspan fill="#8b949e">)</tspan><tspan x="326" fill="#c9d1d9">GENAT · Gerenciamento de Atividades Complementares</tspan><tspan fill="#8b949e"> — </tspan><tspan fill="#ffffff" font-weight="700">Faculdade Senac</tspan></text></g>
-<g class="l" style="animation-delay:0.68s"><circle cx="44" cy="245" r="6" fill="#e3b341" stroke="#0d1117" stroke-width="2"/><text y="250" xml:space="preserve"><tspan fill="#ffa657" x="66">511b927</tspan><tspan fill="#8b949e" x="142">2026.1</tspan><tspan x="210" fill="#8b949e">(</tspan><tspan fill="#e3b341">prêmio</tspan><tspan fill="#8b949e">)</tspan><tspan x="326" fill="#c9d1d9">Aluno destaque</tspan><tspan fill="#8b949e"> — </tspan><tspan fill="#ffffff" font-weight="700">Porto Digital</tspan></text></g>
-<g class="l" style="animation-delay:0.80s"><circle cx="44" cy="275" r="6" fill="#d2a8ff" stroke="#0d1117" stroke-width="2"/><text y="280" xml:space="preserve"><tspan fill="#ffa657" x="66">bb619ba</tspan><tspan fill="#8b949e" x="142">2026.1</tspan><tspan x="210" fill="#8b949e">(</tspan><tspan fill="#d2a8ff">evento</tspan><tspan fill="#8b949e">)</tspan><tspan x="326" fill="#c9d1d9">Hackathon Porto de Suape</tspan></text></g>
-<g class="l" style="animation-delay:0.92s"><circle cx="44" cy="305" r="6" fill="#d2a8ff" stroke="#0d1117" stroke-width="2"/><text y="310" xml:space="preserve"><tspan fill="#ffa657" x="66">cee08f9</tspan><tspan fill="#8b949e" x="142">2026.1</tspan><tspan x="210" fill="#8b949e">(</tspan><tspan fill="#d2a8ff">evento</tspan><tspan fill="#8b949e">)</tspan><tspan x="326" fill="#c9d1d9">Hackathon Manus Day 2026</tspan><tspan fill="#8b949e"> — </tspan><tspan fill="#ffffff" font-weight="700">Recife</tspan></text></g>
-<g class="l" style="animation-delay:1.04s"><circle cx="44" cy="335" r="6" fill="#58a6ff" stroke="#0d1117" stroke-width="2"/><text y="340" xml:space="preserve"><tspan fill="#ffa657" x="66">d47e487</tspan><tspan fill="#8b949e" x="142">2025.2</tspan><tspan x="210" fill="#8b949e">(</tspan><tspan fill="#58a6ff">residência</tspan><tspan fill="#8b949e">)</tspan><tspan x="326" fill="#c9d1d9">Residência Tecnológica</tspan><tspan fill="#8b949e"> — </tspan><tspan fill="#ffffff" font-weight="700">Liferay DXP</tspan></text></g>
-<g class="l" style="animation-delay:1.16s"><circle cx="44" cy="365" r="6" fill="#e3b341" stroke="#0d1117" stroke-width="2"/><text y="370" xml:space="preserve"><tspan fill="#ffa657" x="66">915d96d</tspan><tspan fill="#8b949e" x="142">2025.2</tspan><tspan x="210" fill="#8b949e">(</tspan><tspan fill="#e3b341">prêmio</tspan><tspan fill="#8b949e">)</tspan><tspan x="326" fill="#c9d1d9">Aluno destaque</tspan><tspan fill="#8b949e"> — </tspan><tspan fill="#ffffff" font-weight="700">Porto Digital</tspan></text></g>
-<g class="l" style="animation-delay:1.28s"><circle cx="44" cy="395" r="6" fill="#d2a8ff" stroke="#0d1117" stroke-width="2"/><text y="400" xml:space="preserve"><tspan fill="#ffa657" x="66">5f52281</tspan><tspan fill="#8b949e" x="142">2025.2</tspan><tspan x="210" fill="#8b949e">(</tspan><tspan fill="#d2a8ff">evento</tspan><tspan fill="#8b949e">)</tspan><tspan x="326" fill="#c9d1d9">REC'n'Play</tspan></text></g>
-<g class="l" style="animation-delay:1.40s"><circle cx="44" cy="425" r="6" fill="#8b949e" stroke="#0d1117" stroke-width="2"/><text y="430" xml:space="preserve"><tspan fill="#ffa657" x="66">0ab5a51</tspan><tspan fill="#8b949e" x="142">origem</tspan><tspan x="210" fill="#8b949e">(</tspan><tspan fill="#8b949e">init</tspan><tspan fill="#8b949e">)</tspan><tspan x="326" fill="#8b949e">Atendimento ao cliente @ Ferreira Costa</tspan><tspan fill="#8b949e"> → foco no usuário</tspan></text></g>
-<text x="30" y="480" class="l" style="animation-delay:1.62s;font-size:15px" xml:space="preserve"><tspan fill="#39d353">$</tspan><tspan fill="#c9d1d9"> ls </tspan><tspan fill="#ffa657">-1 </tspan><tspan fill="#a5d6ff">certificados/</tspan></text>
-<text x="30" y="508" class="l" style="animation-delay:1.77s" xml:space="preserve"><tspan fill="#58a6ff" font-weight="700">rocketseat/  </tspan><tspan fill="#c9d1d9">formacao-nodejs-rotas-http-e-apis</tspan></text>
-<text x="30" y="534" class="l" style="animation-delay:1.89s" xml:space="preserve"><tspan fill="#58a6ff" font-weight="700">rocketseat/  </tspan><tspan fill="#c9d1d9">projeto-com-tooling-fundamentos</tspan></text>
-<text x="30" y="560" class="l" style="animation-delay:2.01s" xml:space="preserve"><tspan fill="#58a6ff" font-weight="700">eldorado/    </tspan><tspan fill="#c9d1d9">psicologia-aplicada-a-ux</tspan></text>
+<text x="500" y="29" text-anchor="middle" fill="#8b949e" font-size="14">trajetoria — carreira/</text>
+<text x="30" y="84" class="l" xml:space="preserve" style="font-size:15px"><tspan fill="#39d353">$</tspan><tspan fill="#c9d1d9"> ls </tspan><tspan fill="#ffa657">-1 </tspan><tspan fill="#a5d6ff">carreira/*</tspan></text>
+<g class="l" style="animation-delay:0.20s">
+<rect x="30" y="108" width="300" height="330" rx="10" fill="#161b22" stroke="#30363d"/>
+<text x="46" y="138" style="font-size:15px;font-weight:700" fill="#58a6ff">experiencia/</text>
+<text x="314" y="138" text-anchor="end" fill="#8b949e" style="font-size:12px">4 itens</text>
+<rect x="31" y="154" width="298" height="1" fill="#30363d"/>
+<rect x="47" y="181" width="2" height="162" fill="#30363d"/></g>
+<g class="l" style="animation-delay:0.30s"><circle cx="48" cy="181" r="6" fill="#58a6ff" stroke="#161b22" stroke-width="2"/>
+<text x="64" y="186" fill="#ffffff" style="font-weight:700">Banco do Brasil</text>
+<text x="314" y="186" text-anchor="end" fill="#8b949e" style="font-size:12px">2026.2</text>
+<text x="64" y="206" fill="#8b949e" style="font-size:12px">Residência Tecnológica</text></g>
+<g class="l" style="animation-delay:0.40s"><circle cx="48" cy="235" r="6" fill="#58a6ff" stroke="#161b22" stroke-width="2"/>
+<text x="64" y="240" fill="#ffffff" style="font-weight:700">Banco do Brasil</text>
+<text x="314" y="240" text-anchor="end" fill="#8b949e" style="font-size:12px">2026.1</text>
+<text x="64" y="260" fill="#8b949e" style="font-size:12px">Residência Tecnológica</text></g>
+<g class="l" style="animation-delay:0.50s"><circle cx="48" cy="289" r="6" fill="#58a6ff" stroke="#161b22" stroke-width="2"/>
+<text x="64" y="294" fill="#ffffff" style="font-weight:700">GENAT · Faculdade Senac</text>
+<text x="314" y="294" text-anchor="end" fill="#8b949e" style="font-size:12px">2026.1</text>
+<text x="64" y="314" fill="#8b949e" style="font-size:12px">Gerenc. de Ativ. Complementares</text></g>
+<g class="l" style="animation-delay:0.60s"><circle cx="48" cy="343" r="6" fill="#58a6ff" stroke="#161b22" stroke-width="2"/>
+<text x="64" y="348" fill="#ffffff" style="font-weight:700">Liferay DXP</text>
+<text x="314" y="348" text-anchor="end" fill="#8b949e" style="font-size:12px">2025.2</text>
+<text x="64" y="368" fill="#8b949e" style="font-size:12px">Residência Tecnológica</text></g>
+<g class="l" style="animation-delay:0.75s">
+<rect x="350" y="108" width="300" height="330" rx="10" fill="#161b22" stroke="#30363d"/>
+<text x="366" y="138" style="font-size:15px;font-weight:700" fill="#d2a8ff">eventos/</text>
+<text x="634" y="138" text-anchor="end" fill="#8b949e" style="font-size:12px">4 itens</text>
+<rect x="351" y="154" width="298" height="1" fill="#30363d"/>
+<rect x="367" y="181" width="2" height="162" fill="#30363d"/></g>
+<g class="l" style="animation-delay:0.85s"><circle cx="368" cy="181" r="6" fill="#d2a8ff" stroke="#161b22" stroke-width="2"/>
+<text x="384" y="186" fill="#ffffff" style="font-weight:700">REC'n'Play</text>
+<text x="634" y="186" text-anchor="end" fill="#8b949e" style="font-size:12px">2026.2</text>
+<text x="384" y="206" fill="#8b949e" style="font-size:12px">Capítulo IA</text></g>
+<g class="l" style="animation-delay:0.95s"><circle cx="368" cy="235" r="6" fill="#d2a8ff" stroke="#161b22" stroke-width="2"/>
+<text x="384" y="240" fill="#ffffff" style="font-weight:700">Porto de Suape</text>
+<text x="634" y="240" text-anchor="end" fill="#8b949e" style="font-size:12px">2026.1</text>
+<text x="384" y="260" fill="#8b949e" style="font-size:12px">Hackathon</text></g>
+<g class="l" style="animation-delay:1.05s"><circle cx="368" cy="289" r="6" fill="#d2a8ff" stroke="#161b22" stroke-width="2"/>
+<text x="384" y="294" fill="#ffffff" style="font-weight:700">Manus Day 2026</text>
+<text x="634" y="294" text-anchor="end" fill="#8b949e" style="font-size:12px">2026.1</text>
+<text x="384" y="314" fill="#8b949e" style="font-size:12px">Hackathon · Recife</text></g>
+<g class="l" style="animation-delay:1.15s"><circle cx="368" cy="343" r="6" fill="#d2a8ff" stroke="#161b22" stroke-width="2"/>
+<text x="384" y="348" fill="#ffffff" style="font-weight:700">REC'n'Play</text>
+<text x="634" y="348" text-anchor="end" fill="#8b949e" style="font-size:12px">2025.2</text>
+<text x="384" y="368" fill="#8b949e" style="font-size:12px">Recife</text></g>
+<g class="l" style="animation-delay:1.30s">
+<rect x="670" y="108" width="300" height="330" rx="10" fill="#161b22" stroke="#30363d"/>
+<text x="686" y="138" style="font-size:15px;font-weight:700" fill="#ffa657">certificados/</text>
+<text x="954" y="138" text-anchor="end" fill="#8b949e" style="font-size:12px">5 itens</text>
+<rect x="671" y="154" width="298" height="1" fill="#30363d"/>
+<rect x="687" y="181" width="2" height="216" fill="#30363d"/></g>
+<g class="l" style="animation-delay:1.40s"><circle cx="688" cy="181" r="6" fill="#e3b341" stroke="#161b22" stroke-width="2"/>
+<text x="704" y="186" fill="#ffffff" style="font-weight:700">Aluno destaque</text>
+<text x="954" y="186" text-anchor="end" fill="#8b949e" style="font-size:12px">2026.1</text>
+<text x="704" y="206" fill="#8b949e" style="font-size:12px">Porto Digital</text></g>
+<g class="l" style="animation-delay:1.50s"><circle cx="688" cy="235" r="6" fill="#e3b341" stroke="#161b22" stroke-width="2"/>
+<text x="704" y="240" fill="#ffffff" style="font-weight:700">Aluno destaque</text>
+<text x="954" y="240" text-anchor="end" fill="#8b949e" style="font-size:12px">2025.2</text>
+<text x="704" y="260" fill="#8b949e" style="font-size:12px">Porto Digital</text></g>
+<g class="l" style="animation-delay:1.60s"><circle cx="688" cy="289" r="6" fill="#ffa657" stroke="#161b22" stroke-width="2"/>
+<text x="704" y="294" fill="#ffffff" style="font-weight:700">Node.js, rotas HTTP e APIs</text>
+
+<text x="704" y="314" fill="#8b949e" style="font-size:12px">Rocketseat</text></g>
+<g class="l" style="animation-delay:1.70s"><circle cx="688" cy="343" r="6" fill="#ffa657" stroke="#161b22" stroke-width="2"/>
+<text x="704" y="348" fill="#ffffff" style="font-weight:700">Projeto com tooling</text>
+
+<text x="704" y="368" fill="#8b949e" style="font-size:12px">Rocketseat · fundamentos</text></g>
+<g class="l" style="animation-delay:1.80s"><circle cx="688" cy="397" r="6" fill="#ffa657" stroke="#161b22" stroke-width="2"/>
+<text x="704" y="402" fill="#ffffff" style="font-weight:700">Psicologia Aplicada a UX</text>
+
+<text x="704" y="422" fill="#8b949e" style="font-size:12px">Instituto Eldorado</text></g>
 </svg>

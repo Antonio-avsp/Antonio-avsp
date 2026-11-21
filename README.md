@@ -16,21 +16,21 @@
 
 <img src="assets/editor.svg" width="46%" align="right" alt="sobre_mim.js" />
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=16&duration=2800&pause=1000&color=39D353&width=420&height=26&lines=%3E%20Ol%C3%A1%2C%20mundo!%20Eu%20sou%20o%20Antonio%20%F0%9F%91%8B;%3E%20Desenvolvedor%20Web%20%7C%20Backend%20%26%20Frontend;%3E%20ADS%20%40%20Faculdade%20Senac%20%E2%80%94%20Recife%2FPE;%3E%20Aluno%20destaque%20no%20Porto%20Digital%20%F0%9F%8F%86;%3E%20git%20commit%20-m%20%22evoluindo%20sempre%22)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=16&duration=2800&pause=1000&color=39D353&width=420&height=26&lines=%3E%20Ol%C3%A1%2C%20mundo!%20Eu%20sou%20o%20Antonio%20%F0%9F%91%8B;%3E%20Desenvolvedor%20Full%20Stack;%3E%20ADS%20%40%20Faculdade%20Senac%20%E2%80%94%20Recife%2FPE;%3E%20Aluno%20destaque%20no%20Porto%20Digital%20%F0%9F%8F%86;%3E%20git%20commit%20-m%20%22evoluindo%20sempre%22)](https://git.io/typing-svg)
 
 <div align="justify">
 
-Sou desenvolvedor web atuando no `Back-end` e no `Front-end`, cursando **Análise e Desenvolvimento de Sistemas** na **Faculdade Senac (Recife/PE)** e já colocando a mão na massa em projetos práticos de desenvolvimento **web e mobile**.
+Sou desenvolvedor `Full Stack`, atuando no `Back-end` e no `Front-end`, cursando **Análise e Desenvolvimento de Sistemas** na **Faculdade Senac (Recife/PE)** e já colocando a mão na massa em projetos práticos de desenvolvimento **web e mobile**.
 Faço parte do ecossistema do **Porto Digital**, o maior polo de inovação e tecnologia do Brasil, onde passei por **residências tecnológicas** com o **Banco do Brasil** e a **Liferay DXP** e fui reconhecido como **aluno destaque** em 2025.2 e 2026.1.
 Antes do código, trabalhei com atendimento ao cliente na Ferreira Costa, o que me deu comunicação clara, oratória e um olhar sempre centrado na **experiência do usuário**.
-No dia a dia uso `Node.js`, `Express`, `TypeScript`, `Python`, `Prisma` e `SQL`, e aplico **IA (LLMs)** no desenvolvimento de produtos digitais.
+No dia a dia uso `Node.js`, `Express`, `TypeScript`, `Python` e `SQL`, e aplico **IA (LLMs)** no desenvolvimento de produtos digitais.
 Tenho mentalidade prática, aprendo rápido e estou sempre em busca de novos desafios!
 
 </div>
 
 ```diff
-+ Construindo APIs com Node.js, Express e Prisma
-+ Desenvolvendo apps full stack: BioAlert e Barbearia Digital
++ Construindo APIs com Node.js e Express
++ Desenvolvendo aplicações web e mobile de ponta a ponta
 + Aplicando IA (LLMs) em produtos digitais
 + Aberto a oportunidades e colaborações
 - Bugs (estou trabalhando nisso)
@@ -56,7 +56,7 @@ Tenho mentalidade prática, aprendo rápido e estou sempre em busca de novos des
 <img src="assets/h-trajetoria.svg" width="100%" alt="03. trajetoria()" />
 
 <p align="center">
-  <img src="assets/trajetoria.svg" width="100%" alt="Trajetória: residências no Banco do Brasil e Liferay DXP, hackathons, REC'n'Play e aluno destaque Porto Digital" />
+  <img src="assets/trajetoria.svg" width="100%" alt="Trajetória: experiência (residências no Banco do Brasil e Liferay DXP, GENAT), eventos (REC'n'Play, hackathons) e certificados" />
 </p>
 
 <br/>
@@ -79,10 +79,6 @@ Tenho mentalidade prática, aprendo rápido e estou sempre em busca de novos des
 <p align="center">
   <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Antonio-avsp/Antonio-avsp/output/stats-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Antonio-avsp/Antonio-avsp/output/stats.svg" /><img width="49%" alt="Estatísticas" src="https://raw.githubusercontent.com/Antonio-avsp/Antonio-avsp/output/stats-dark.svg" /></picture>
   <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Antonio-avsp/Antonio-avsp/output/langs-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Antonio-avsp/Antonio-avsp/output/langs.svg" /><img width="49%" alt="Linguagens" src="https://raw.githubusercontent.com/Antonio-avsp/Antonio-avsp/output/langs-dark.svg" /></picture>
-</p>
-
-<p align="center">
-  <img src="https://streak-stats.demolab.com?user=Antonio-avsp&locale=pt_BR&hide_border=true&border_radius=12&background=0D1117&ring=39D353&fire=39D353&currStreakLabel=39D353&sideLabels=C9D1D9&currStreakNum=FFFFFF&sideNums=FFFFFF&dates=8B949E&stroke=30363D" alt="Sequência" />
 </p>
 
 <br/>
