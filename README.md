@@ -66,7 +66,7 @@ Tenho mentalidade prática, aprendo rápido e estou sempre em busca de novos des
 
 <p align="center">
   <a href="https://github.com/residencia-geoespacial-squad32"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Antonio-avsp/Antonio-avsp/output/repo-1-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Antonio-avsp/Antonio-avsp/output/repo-1.svg" /><img width="49%" alt="AGIR — ambiente geoespacial (Residência Banco do Brasil)" src="https://raw.githubusercontent.com/Antonio-avsp/Antonio-avsp/output/repo-1-dark.svg" /></picture></a>
-  <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Antonio-avsp/Antonio-avsp/output/repo-2-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Antonio-avsp/Antonio-avsp/output/repo-2.svg" /><img width="49%" alt="Agente financeiro — Open Finance BB (repositório privado)" src="https://raw.githubusercontent.com/Antonio-avsp/Antonio-avsp/output/repo-2-dark.svg" /></picture>
+  <a href="https://github.com/Antonio-avsp/Projeto-bb-backend"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Antonio-avsp/Antonio-avsp/output/repo-2-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Antonio-avsp/Antonio-avsp/output/repo-2.svg" /><img width="49%" alt="Agente financeiro — Open Finance BB" src="https://raw.githubusercontent.com/Antonio-avsp/Antonio-avsp/output/repo-2-dark.svg" /></picture></a>
 </p>
 
 <p align="center">
