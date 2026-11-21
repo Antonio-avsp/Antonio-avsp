@@ -16,8 +16,8 @@ const PERFIL = {
 };
 
 const STACK = [
-  ["backend", ["Node.js", "Express", "Python"]],
-  ["frontend", ["HTML", "CSS", "JavaScript"]],
+  ["backend", ["Node.js", "Express", "TypeScript", "Python"]],
+  ["frontend", ["HTML", "CSS", "JavaScript", "TypeScript"]],
   ["dados", ["SQL", "Prisma ORM"]],
   ["infra_deploy", ["Render", "Vercel", "Aiven", "Cloudinary", "TiDB"]],
   ["ferramentas", ["Git", "GitHub", "Figma", "Trello"]],

@@ -7,7 +7,6 @@
   <a href="https://www.linkedin.com/in/antonioviniciusav"><img src="https://img.shields.io/badge/linkedin-0D1117?style=for-the-badge&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iIzU4QTZGRiI+PHBhdGggZD0iTTIwLjQ0NyAyMC40NTJoLTMuNTU0di01LjU2OWMwLTEuMzI4LS4wMjctMy4wMzctMS44NTItMy4wMzctMS44NTMgMC0yLjEzNiAxLjQ0NS0yLjEzNiAyLjkzOXY1LjY2N0g5LjM1MVY5aDMuNDE0djEuNTYxaC4wNDZjLjQ3Ny0uOSAxLjYzNy0xLjg1IDMuMzctMS44NSAzLjYwMSAwIDQuMjY3IDIuMzcgNC4yNjcgNS40NTV2Ni4yODZ6TTUuMzM3IDcuNDMzYTIuMDYyIDIuMDYyIDAgMSAxIDAtNC4xMjUgMi4wNjIgMi4wNjIgMCAwIDEgMCA0LjEyNXpNNy4xMTkgMjAuNDUySDMuNTU1VjloMy41NjR2MTEuNDUyek0yMi4yMjUgMEgxLjc3MUMuNzkyIDAgMCAuNzc0IDAgMS43Mjl2MjAuNTQyQzAgMjMuMjI3Ljc5MiAyNCAxLjc3MSAyNGgyMC40NTFDMjMuMiAyNCAyNCAyMy4yMjcgMjQgMjIuMjcxVjEuNzI5QzI0IC43NzQgMjMuMiAwIDIyLjIyMiAwaC4wMDN6Ii8+PC9zdmc+" alt="LinkedIn" /></a>
   <img src="https://img.shields.io/badge/recife,_pe-0D1117?style=for-the-badge&logo=googlemaps&logoColor=D2A8FF" alt="Recife, PE" />
   <img src="https://img.shields.io/badge/porto_digital-0D1117?style=for-the-badge&logo=rocket&logoColor=39D353" alt="Porto Digital" />
-  <img src="https://komarev.com/ghpvc/?username=Antonio-avsp&label=visitas&color=0D1117&style=for-the-badge" alt="Visitas" />
 </p>
 
 <br/>
@@ -24,7 +23,7 @@
 Sou desenvolvedor web atuando no `Back-end` e no `Front-end`, cursando **Análise e Desenvolvimento de Sistemas** na **Faculdade Senac (Recife/PE)** e já colocando a mão na massa em projetos práticos de desenvolvimento **web e mobile**.
 Faço parte do ecossistema do **Porto Digital**, o maior polo de inovação e tecnologia do Brasil, onde passei por **residências tecnológicas** com o **Banco do Brasil** e a **Liferay DXP** e fui reconhecido como **aluno destaque** em 2025.2 e 2026.1.
 Antes do código, trabalhei com atendimento ao cliente na Ferreira Costa, o que me deu comunicação clara, oratória e um olhar sempre centrado na **experiência do usuário**.
-No dia a dia uso `Node.js`, `Express`, `Python`, `Prisma` e `SQL`, e aplico **IA (LLMs)** no desenvolvimento de produtos digitais.
+No dia a dia uso `Node.js`, `Express`, `TypeScript`, `Python`, `Prisma` e `SQL`, e aplico **IA (LLMs)** no desenvolvimento de produtos digitais.
 Tenho mentalidade prática, aprendo rápido e estou sempre em busca de novos desafios!
 
 </div>
@@ -44,11 +43,11 @@ Tenho mentalidade prática, aprendo rápido e estou sempre em busca de novos des
 <img src="assets/h-tecnologias.svg" width="100%" alt="02. tecnologias()" />
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=nodejs,express,python,js,html,css,prisma,git,github,figma,vercel,vscode&theme=dark" alt="Tecnologias" />
+  <img src="https://skillicons.dev/icons?i=nodejs,express,ts,python,js,html,css,prisma,git,github,figma,vercel,vscode&theme=dark" alt="Tecnologias" />
 </p>
 
 <p align="center">
-  <img src="assets/stack.svg" width="100%" alt="stack.yml — Node.js, Express, Python, HTML, CSS, JavaScript, SQL, Prisma, Render, Vercel, Aiven, Cloudinary, TiDB, Git, GitHub, Figma, Trello, Scrum, Kanban, LLMs" />
+  <img src="assets/stack.svg" width="100%" alt="stack.yml — Node.js, Express, TypeScript, Python, HTML, CSS, JavaScript, SQL, Prisma, Render, Vercel, Aiven, Cloudinary, TiDB, Git, GitHub, Figma, Trello, Scrum, Kanban, LLMs" />
 </p>
 
 <br/>
